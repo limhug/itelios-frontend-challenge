@@ -1,0 +1,26 @@
+{
+  "name": "itelios-frontend-challenge",
+  "version": "1.0.0",
+  "description": "Teste Itelios",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon app"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "nunjucks": "^3.1.3",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limhug/itelios-frontend-challenge.git"
+  },
+  "author": "Hugo N Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limhug/itelios-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/limhug/itelios-frontend-challenge#readme"
+}
