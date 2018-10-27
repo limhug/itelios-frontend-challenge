@@ -1,0 +1,294 @@
+body
+  background-color $white
+
+.container-fluid
+  background-color $white
+  padding 10px
+  width 100%
+
+/* Caroussel */
+.widget
+  display flex
+  margin-bottom 50px
+
+    .box-product
+      width 100%
+
+  .title
+    h1
+      color $blueLight
+      font-size 29px
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-bottom 25px
+
+/* Buttons */
+.btn
+  display flex
+  align-items center
+  justify-content center
+  background-color $white
+  border 1px solid $grayLight
+  width 100%
+  height 58px
+  cursor pointer
+
+  span
+    font-family: 'Roboto Condensed', sans-serif;
+    color $silver
+
+  .icon-btn
+    margin-left 5px
+    fill $silver
+
+.btn-boxProduct
+  transition all 0.3s ease-out
+  margin-top 30px
+
+  span
+    color $blueDark
+
+  .icon-btn
+    fill $blueDark
+    transition all 0.3s ease-out
+
+  &:hover
+    transition all 0.3s ease-out
+    border-left 10px solid $orange
+    border-top 1px solid $grayLight
+    border-bottom 1px solid $grayLight
+    border-rigth 1px solid $grayLight
+
+    .icon-btn
+      fill $orange
+      transition all 0.3s ease-out
+
+/* Vitrine */
+.box-product
+  border 1px solid $grayLight
+  transition all 0.3s ease-out
+  padding 25px
+
+  img
+    width 75%
+    display block
+    margin 0 auto
+
+  h1
+    margin 10px 0 0 0
+    font-family: 'Roboto', sans-serif;
+    color $grayMedium
+    font-weight 400
+
+  .prices
+    display flex
+    flex-direction column
+    font-family: 'Roboto', sans-serif;
+    color $blueLight
+
+    .price-old
+      display none
+
+    .price
+      color $blueLight
+      margin-bottom 8px
+
+      .value
+        font-weight 700
+        color $blueDark
+
+  .btn
+    display none
+    transition 0.3s
+
+  &:hover
+    transition all 0.3s ease-out
+    min-height 465px
+    background $gray
+    background -moz-linear-gradient(top, $gray 0%, $white 100%)
+    background -webkit-gradient(left top, left bottom, color-stop(0%, $gray), color-stop(100%, $white))
+    background -webkit-linear-gradient(top, $gray 0%, $white 100%)
+    background -o-linear-gradient(top, $gray 0%, $white 100%)
+    background -ms-linear-gradient(top, $gray 0%, $white 100%)
+    background linear-gradient(to bottom, $gray 0%, $white 100%)
+
+    .btn
+      display flex !important
+      transition 0.3s
+
+@media (max-width: 576px)
+  .container
+    width 85%
+    margin 0 auto
+
+  .widget
+    display flex
+    flex-direction column
+
+    .btn
+      height 58px
+
+      span 
+        font-size 1.5em
+
+    .box-product
+      min-height 382px
+
+      h1
+        font-size 16px
+        margin-bottom 25px
+
+      .value
+        font-size 23px
+
+      .paymentConditions
+        font-size 16px
+
+    .recommendations
+      margin-top 20px
+
+      .slick-dots
+        margin-bottom -10px
+
+        button:before
+          background-color $black
+          border-radius 50%
+          width 13px
+          height 13px
+
+@media (min-width: 576px)
+  .container
+    width 530px
+    margin 0 auto
+
+    .title
+      h1
+        font-size 1.5em
+
+    .visited
+      width 50%
+
+    .recommendations
+      width 50%
+
+      .slick-dots
+        margin-bottom -30px
+
+        button:before
+          background-color $black
+          border-radius 50%
+          width 13px
+          height 13px
+
+    .btn
+      height 50px
+
+      span 
+        font-size 1.3em
+
+    .box-product
+      min-height 382px
+
+      h1
+        font-size 16px
+        margin-bottom 25px
+
+      .value
+        font-size 23px
+
+      .paymentConditions
+        font-size 16px
+
+        strong 
+          font-weight bold
+          color $blueDark
+
+@media (min-width: 992px)
+  .container
+    width 900px
+    margin 0 auto
+
+    .title
+      h1
+        font-size 1.7em
+
+    .visited
+      width 33.5%
+
+    .recommendations
+      width 66.5%
+
+      .slick-dots
+        margin-bottom -10px
+
+    .btn
+      height 58px
+
+      span 
+        font-size 1.5em
+
+    .box-product
+      min-height 382px
+
+      h1
+        font-size 16px
+        margin-bottom 25px
+
+      .value
+        font-size 23px
+
+      .paymentConditions
+        font-size 16px
+
+@media (min-width: 1200px)
+  .container
+    width 1100px
+    margin 0 auto
+
+    .btn
+      height 45px
+
+      span 
+        font-size 1.3em
+
+    .visited
+      width 25%
+
+    .recommendations
+      width 75%
+
+    .box-product
+      min-height 342px
+
+      h1
+        font-size 0.95em
+        margin-bottom:20px;
+
+      .value
+        font-size 1.2em
+      
+      .paymentConditions
+        font-size 0.95em
+
+@media (min-width: 1400px)
+  .container
+    width 1200px
+    margin 0 auto
+
+    .btn
+      height 58px
+
+      span 
+        font-size 1.5em
+
+    .box-product
+      min-height 382px
+
+      h1
+        font-size 16px
+        margin-bottom 25px
+
+      .value
+        font-size 23px
+
+      .paymentConditions
+        font-size 16px
